@@ -31,4 +31,95 @@
     .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     @media (max-width:900px){.cards{grid-template-columns:1fr}}
     .card{background:var(--card);border-radius:20px;padding:18px;border:1px solid var(--ring);box-shadow:0 8px 24px rgba(2,132,199,.08)}
-    details{border:1px solid var(--ring);border-radius:14px;background:#f
+    details{border:1px solid var(--ring);border-radius:14px;background:#fff;padding:10px 12px}details+details{margin-top:10px}summary{cursor:pointer;font-weight:700}summary::-webkit-details-marker{display:none}
+    .cta{background:linear-gradient(90deg,var(--brand) 0%,var(--leaf) 100%);color:#fff;border-radius:20px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .cta b{font-size:18px}
+    footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+    ul{padding-left:18px;margin:10px 0}li{margin:6px 0}
+    .pill{display:inline-block;background:#e0f2fe;color:#075985;border:1px solid #bae6fd;padding:4px 10px;border-radius:999px;font-size:12px;margin-right:6px}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap h-inner">
+      <div class="brand">Park Play Therapy Research</div>
+      <nav class="nav">
+        <a href="#about">About</a><a href="#aims">Aims</a><a href="#methods">Methods</a><a href="#evidence">Evidence</a><a href="#budget">Budget</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div class="grid2">
+        <div>
+          <h1>Early mitochondrial-based OT research for infants at risk of autism</h1>
+          <p class="lead">
+            Led by <b>Heather Hignite, OTR/L</b> with <b>Mindy Dunlevy, OTR/L</b> (Park Play Therapy Inc.).  
+            We explore <span class="pill">red light</span><span class="pill">deuterium-depleted water</span><span class="pill">sound therapy</span><span class="pill">soil/dig play</span><span class="pill">blue-light minimization</span>.
+          </p>
+          <div class="btns">
+            <a class="btn btn-primary" href="#aims">See Research Aims</a>
+            <a class="btn btn-ghost" href="#contact">Collaborate</a>
+            <a class="btn btn-ghost" href="#downloads">Download PDFs</a>
+          </div>
+          <div class="note">Work address: 100 Pin Oak Drive • Research-only. Not medical advice.</div>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1484976063837-eab657a7d81b?q=80&w=1600&auto=format&fit=crop" alt="Smiling toddler playing outside" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about"><h2 class="section-title">About the Project</h2>
+      <p class="text">Randomized crossover pilot evaluating a multimodal, OT-led program targeting mitochondrial health in infants identified as “at risk” for ASD. All families ultimately receive the intervention.</p>
+    </section>
+
+    <section id="aims"><h2 class="section-title">Research Aims</h2>
+      <ul class="text">
+        <li>Improve biomarkers of oxidative stress, energy metabolism, and inflammation.</li>
+        <li>Assess developmental change (Bayley, Vineland, PDMS-2, Sensory Profile).</li>
+        <li>Evaluate feasibility of an OT-led, biologically-informed program.</li>
+      </ul>
+    </section>
+
+    <section id="methods"><h2 class="section-title">Methods & Components</h2>
+      <ul class="text">
+        <li>Red light therapy (OT-supervised sessions)</li>
+        <li>Deuterium-depleted water (structured intake)</li>
+        <li>Blue-light minimization (environmental changes)</li>
+        <li>Soil/digging protocol (daily outdoor earth-contact play)</li>
+        <li>Sound-based therapy (non-headphone, room resonance)</li>
+      </ul>
+    </section>
+
+    <section id="evidence"><h2 class="section-title">Selected Research & Evidence</h2>
+      <details><summary>Napoli et al., 2014 — Mitochondrial dysfunction in ASD</summary><p>Many children with ASD show mitochondrial abnormalities affecting energy metabolism and development.</p></details>
+      <details><summary>Hamblin, 2017 — Anti-inflammatory effects of photobiomodulation</summary><p>Red/NIR light can enhance mitochondrial function and reduce oxidative stress/inflammation.</p></details>
+      <details><summary>Somlyai et al., 2016 — Deuterium depletion</summary><p>Deuterium-depleted environments improve mitochondrial function.</p></details>
+      <details><summary>Lowry et al., 2016 — Soil microbes & stress resilience</summary><p>Exposure to <i>M. vaccae</i> supports serotonin and resilience.</p></details>
+      <details><summary>Buescher et al., 2014 — Economic impact of ASD</summary><p>ASD has major lifetime and national costs, showing the importance of early intervention.</p></details>
+    </section>
+
+    <section id="budget"><h2 class="section-title">Budget Overview</h2>
+      <ul class="text">
+        <li>Personnel: $275,000</li>
+        <li>Research Costs: $27,000</li>
+        <li>Equipment & Support: $52,000</li>
+        <li><b>Total Requested: $299,000</b></li>
+      </ul>
+      <div id="downloads" class="cards" style="margin-top:10px">
+        <a class="card btn btn-ghost" href="files/Grant_Summary_Hignite_Dunlevy.pdf">Download Grant Summary (PDF)</a>
+        <a class="card btn btn-ghost" href="files/Budget_Overview_Hignite_Dunlevy.pdf">Download Budget (PDF)</a>
+      </div>
+      <p class="muted">If these don’t work yet, upload PDFs to a folder named <code>files</code> in the repo.</p>
+    </section>
+
+    <section id="contact"><h2 class="section-title">Get Involved / Contact</h2>
+      <p>Email: <a href="mailto:hello@parkplaytherapyresearch.org">hello@parkplaytherapyresearch.org</a></p>
+    </section>
+  </main>
+
+  <footer>© 2025 Park Play Therapy Research • Research-only content; not medical advice.</footer>
+</body>
+</html>
